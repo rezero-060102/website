@@ -1,0 +1,2878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>santuy - eCommerce Website</title>
+
+  <!--- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+  <!--- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="overlay" data-overlay></div>
+
+  <!--- MODAL -->
+  <div class="modal" data-modal>
+    <div class="modal-close-overlay" data-modal-overlay></div>
+    <div class="modal-content">
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+      <div class="newsletter">
+        <form action="#">
+          <div class="newsletter-header">
+            <h3 class="newsletter-title">Berlangganan Newsletter.</h3>
+            <p class="newsletter-desc">
+              Berlangganan <b>santuy</b> untuk mendapatkan update produk dan diskon terbaru.
+            </p>
+          </div>
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+          <button type="submit" class="btn-newsletter">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--- BERSULANG PEMBERITAHUAN -->
+
+  <div class="notification-toast" data-toast>
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="toast-banner">
+      <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+    <div class="toast-detail">
+      <p class="toast-message">
+        Seseorang yang baru saja membeli.
+      </p>
+      <p class="toast-title">
+        Anting-anting Emas Mawar
+      </p>
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Menit</time> yang lalu
+      </p>
+    </div>
+  </div>
+
+  <!--- HEADER -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <ul class="header-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <div class="header-alert-news">
+          <p>
+            <b>Pengiriman Gratis</b>
+            Pesanan Minggu Ini Lebih dari - RP. 100.000,-
+          </p>
+        </div>
+        <div class="header-top-actions">
+          <select name="currency">
+            <option value="usd">Rupiah &dollar;</option>
+            <option value="eur">Yen &euro;</option>
+          </select>
+          <select name="language">
+            <option value="en-US">English</option>
+            <option value="es-ES">Indonesia&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="container">
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+        </a>
+        <div class="header-search-container">
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="header-user-actions">
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+
+          <!-- Berada -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Beranda</a>
+          </li>
+          <li class="menu-category">
+            <a href="#" class="menu-title">Kategori</a>
+            <div class="dropdown-panel">
+              <ul class="dropdown-panel-list">
+
+                <!-- Peralatan elektronik -->
+                <li class="menu-title">
+                  <a href="#">Peralatan elektronik</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Desktop</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Perangkat Laptop</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Camera (Kamera)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Perangkat tablet</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Headphone</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Laki-laki -->
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Laki-laki</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Resmi</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Santai</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Olahraga</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Jaket</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Kaca mata hitam</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Wanita -->
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Wanita</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Resmi</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Santai</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Parfum</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Produk kosmetik</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Tas-tas</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Peralatan elektronik -->
+              <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Peralatan elektronik</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Jam Tangan Cerdas</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Televisi pintar</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Papan ketik (keyboard)</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Mouse</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Mikropon</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Laki-laki -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Laki-laki</a>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a href="#">Kemeja</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Celana Pendek dan Jeans</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Sepatu Keamanan</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Dompet</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Wanita -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Wanita</a>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a href="#">Gaun & Busana</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Anting-anting</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Kalung</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Perlengkapan Rias Wajah</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Perhiasan -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Perhiasan</a>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a href="#">Anting-anting</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Pasangan Cincin</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Kalung</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Gelang tangan</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Parfum -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Parfum</a>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a href="#">Parfum Pakaian</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Deodoran (deodoran)</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Aroma Bunga</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Pengharum Ruangan</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Situs web -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Situs web</a>
+          </li>
+
+          <!-- Penawaran Panas -->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Penawaran Panas</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="mobile-bottom-navigation">
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <a href="#" class="menu-title">Beranda</a>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Laki-laki</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Kemeja</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Celana Pendek & Jeans</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Sepatu Pengaman</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dompet</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Wanita</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Gaun & Busana</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Anting-anting</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Kalung</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Perlengkapan Rias Wajah</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perhiasan</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Anting-anting</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Cincin Pasangan</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Kalung</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Gelang tangan</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Parfum</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Parfum Pakaian</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodoran</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Aroma Bunga</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Pengharum Ruangan</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+      </ul>
+
+      <div class="menu-bottom">
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Bahasa</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Bahasa Inggris</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Francis&ccedil;h</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Rupiah &dollar;</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USA &euro;</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="menu-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <!--- MAIN-->
+  <main>
+
+    <!--- BANNER -->
+    <div class="banner">
+      <div class="container">
+        <div class="slider-container has-scrollbar">
+          <div class="slider-item">
+            <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
+            <div class="banner-content">
+              <p class="banner-subtitle">Barang yang sedang tren</p>
+              <h2 class="banner-title">Obral busana terbaru untuk wanita</h2>
+              <p class="banner-text">
+                dimulai dari & Rp. <b>100.000,-</b>
+              </p>
+              <a href="#" class="banner-btn">Belanja sekarang</a>
+            </div>
+          </div>
+
+
+          <div class="slider-item">
+            <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
+            <div class="banner-content">
+              <p class="banner-subtitle">Aksesori yang sedang tren</p>
+              <h2 class="banner-title">Kacamata hitam modern</h2>
+              <p class="banner-text">
+                mulai dari Rp 100.000,- </p>
+              <a href="#" class="banner-btn">Belanja sekarang</a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
+            <div class="banner-content">
+              <p class="banner-subtitle">Penawaran Penjualan</p>
+              <h2 class="banner-title">Penjualan musim panas mode baru</h2>
+              <p class="banner-text">
+                mulai dari Rp 100.000,-
+              </p>
+              <a href="#" class="banner-btn">Belanja sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!--- CATEGORY -->
+    <div class="category">
+      <div class="container">
+        <div class="category-item-container has-scrollbar">
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/dress.svg" alt="dress & frock" width="30">
+            </div>
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Pakaian & gaun</h3>
+                <p class="category-item-amount">(53)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+
+          </div>
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/coat.svg" alt="winter wear" width="30">
+            </div>
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Pakaian musim dingin</h3>
+                <p class="category-item-amount">(58)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+
+          </div>
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/glasses.svg" alt="glasses & lens" width="30">
+            </div>
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Kacamata & lensa</h3>
+                <p class="category-item-amount">(68)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+          </div>
+
+
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Celana pendek & celana jeans</h3>
+                <p class="category-item-amount">(84)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
+            </div>
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Kaos oblong</h3>
+                <p class="category-item-amount">(35)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
+            </div>
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Jaket</h3>
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+          </div>
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Menonton</h3>
+                <p class="category-item-amount">(27)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-img-box">
+              <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
+            </div>
+            <div class="category-content-box">
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Topi & topi</h3>
+                <p class="category-item-amount">(39)</p>
+              </div>
+              <a href="#" class="category-btn">Tampilkan semua</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--- PRODUK -->
+    <div class="product-container">
+      <div class="container">
+
+        <!--- HALAMAN SAMPUL -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+          <div class="sidebar-category">
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Kategori</h2>
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+                    <p class="menu-title">Pakaian</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Kemeja</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">celana pendek & jeans</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">jaket</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">gaun & rok</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/shoes.svg" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+                    <p class="menu-title">Alas kaki</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Olahraga</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Resmi</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Santai</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sepatu Keselamatan</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/jewelry.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+                    <p class="menu-title">Perhiasan</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Anting-anting</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cincin Pasangan</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Kalung</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/perfume.svg" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+                    <p class="menu-title">Parfum</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Parfum Pakaian</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Produk deodoran</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">jaket</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">gaun & rok</p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/cosmetics.svg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+                    <p class="menu-title">Produk kosmetik</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Shampoo</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sunscreen</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Body Wash</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Perlengkapan Rias Wajah</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/glasses.svg" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+                    <p class="menu-title">Kaca mata</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Kacamata hitam</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Lensa</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/bag.svg" alt="bags" class="menu-title-img" width="20" height="20">
+                    <p class="menu-title">Tas-tas</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tas Belanja</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Ransel Olahraga</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dompet</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Wallet</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-showcase">
+            <h3 class="showcase-heading">Penjual terbaik</h3>
+            <div class="showcase-wrapper">
+              <div class="showcase-container">
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">sepatu kain untuk bayi</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rp. 81.000,-</del>
+                      <p class="price">Rp. 65.000,-</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">kaos hoodie pria</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rp. 270.000,-</del>
+                      <p class="price">Rp. 110.000,-</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">kaos anak perempuan</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rp. 81.000,-</del>
+                      <p class="price">Rp. 50.000,-</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">topi wol untuk pria</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>Rp. 250.000,-</del>
+                      <p class="price">Rp. 195.000,-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---MINIMAL PRODUK -->
+
+        <div class="product-box">
+          <div class="product-minimal">
+            <div class="product-showcase">
+              <h2 class="title">Pendatang Baru</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-1.jpg" alt="relaxed short full sleeve t-shirt"
+                        width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Kaos Lengan Pendek Santai Penuh</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Pakaian</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 500.000,-</p>
+                        <del>Rp. 700.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-2.jpg" alt="girls pink embro design top"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Anak perempuan desain pnk Embro Atasan</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Clothes</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 600.000,-</p>
+                        <del>RP. 900.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-3.jpg" alt="black floral wrap midi skirt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Rok Midi Corak Floral Hitam</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Pakaian</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 800.000,-</p>
+                        <del>Rp. 1.200.000</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shirt-1.jpg" alt="pure garment dyed cotton shirt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Kemeja Katun Dicelup Pakaian Murni</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Busana Pria</a>
+
+                      <div class="price-box">
+                        <p class="price">Rp. 700.000,-</p>
+                        <del>Rp. 1.100.000</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Winter wear</a>
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$11.00</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-1.jpg" alt="mens winter leathers jackets"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Jaket Kulit Pria Musim Dingin</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Pakaian musim dingin</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 300.000,-</p>
+                        <del>Rp. 550.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-3.jpg" alt="mens winter leathers jackets"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Jaket Kulit Pria Musim Dingin</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Jaket</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 600.000,-</p>
+                        <del>Rp. 800.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shorts-1.jpg" alt="better basics french terry sweatshorts"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Celana Pendek Terry Dasar yang Lebih Baik</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Celana pendek</a>
+                      <div class="price-box">
+                        <p class="price">Rp.200.000,-</p>
+                        <del>Rp. 325.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sedang tren -->
+            <div class="product-showcase">
+              <h2 class="title">Sedang tren</h2>
+              <div class="showcase-wrapper  has-scrollbar">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-1.jpg" alt="running & trekking shoes - white"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Lari & Trekking - Putih</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Olahraga</a>
+
+                      <div class="price-box">
+                        <p class="price">Rp. 700.000,-</p>
+                        <del>Rp. 900.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-2.jpg" alt="trekking & running shoes - black"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Trekking & Running - hitam</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Sports</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 800.000,-</p>
+                        <del>Rp. 1.200.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/party-wear-1.jpg" alt="womens party wear shoes"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Pesta Wanita</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Pakaian pesta</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 999.000,-</p>
+                        <del>Rp. 1.500.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-3.jpg" alt="sports claw women's shoes"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Olahraga untuk Wanita</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Olahraga</a>
+
+                      <div class="price-box">
+                        <p class="price">Rp. 800.000,-</p>
+                        <del>Rp. 1.100.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-6.jpg" alt="air tekking shoes - white"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Trekking Udara - putih</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Olahraga</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 700.000,-</p>
+                        <del>Rp. 900.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shoe-3.jpg" alt="Boot With Suede Detail" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Boot Dengan Detail Suede</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">sepatu bot</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 300.000,-</p>
+                        <del>Rp. 500.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shoe-1.jpg" alt="men's leather formal wear shoes"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Sepatu Kulit Formal Pria</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">resmi</a>
+
+                      <div class="price-box">
+                        <p class="price">Rp. 800.000,-</p>
+                        <del>Rp. 1.200.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shoe-2.jpg" alt="casual men's brown shoes" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Casual Men's Brown shoes</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Casual</a>
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$55.00</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Peringkat teratas -->
+            <div class="product-showcase">
+              <h2 class="title">Peringkat teratas</h2>
+              <div class="showcase-wrapper  has-scrollbar">
+                <div class="showcase-container">
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/watch-3.jpg" alt="pocket watch leather pouch"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Kantung Kulit Jam Tangan Saku</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Arloji</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 650.000.-</p>
+                        <del>Rp. 810.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jewellery-3.jpg" alt="silver deer heart necklace"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Kalung Hati Rusa Perak</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Perhiasan</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 999.000,-</p>
+                        <del>Rp. 1.350.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/perfume.jpg" alt="titan 100 ml womens perfume"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Titan Parfum Wanita 100 Ml</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Parfum</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 599.000,-</p>
+                        <del>Rp. 799.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/belt.jpg" alt="men's leather reversible belt"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Ikat Pinggang Kulit Pria yang Bisa Dibalik</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Ikat pinggang</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 179.000,-</p>
+                        <del>Rp. 300.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jewellery-2.jpg" alt="platinum zircon classic ring"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Cincin Klasik Zirkon Platinum</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">perhiasan</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 999.000,-</p>
+                        <del>Rp. 1.050.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/watch-1.jpg" alt="smart watche vital plus" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Jam tangan pintar Vital Plus</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Arloji</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 1.099.000,-</p>
+                        <del>Rp. 1.300.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shampoo.jpg" alt="shampoo conditioner packs"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">paket kondisioner sampo</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">produk kosmetik</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 299.000,-</p>
+                        <del>Rp. 499.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jewellery-1.jpg" alt="rose gold peacock earrings"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Anting Merak Emas Rose Gold</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">perhiasan</a>
+                      <div class="price-box">
+                        <p class="price">Rp. 299.000,-</p>
+                        <del>Rp. 499.000,-</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--- PRODUCT FEATURED -->
+
+          <div class="product-featured">
+            <h2 class="title">Deal of the day</h2>
+            <div class="showcase-wrapper has-scrollbar">
+              <div class="showcase-container">
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs"
+                      class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">paket sampo, kondisioner & pencuci muka</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Sangat penting untuk memiliki layanan pelanggan yang baik
+                      sakitnya sakit itu akan disusul dengan sakitnya itu sendiri
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">Rp. 799.000,-</p>
+
+                      <del>Rp. 999.000,-</del>
+                    </div>
+
+                    <button class="add-cart-btn">tambahkan ke keranjang</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          sudah terjual: <b>20</b>
+                        </p>
+
+                        <p>
+                          tersedia: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+                      <p class="countdown-desc">
+                        Cepatlah! Penawaran berakhir:
+                      </p>
+
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Hari</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Jam</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Menit</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Detik</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase-container">
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring"
+                      class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Anting-anting berlian Rose Gold</a>
+                    </h3>
+
+                    <p class="showcase-desc">
+                      Sangat penting untuk memiliki layanan pelanggan yang baik
+                      sakitnya sakit itu akan disusul dengan sakitnya itu sendiri
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">Rp. 1.999.000,-</p>
+                      <del>Rp. 2.499.000,-</del>
+                    </div>
+
+                    <button class="add-cart-btn">tambahkan ke troli</button>
+                    <div class="showcase-status">
+
+                      <div class="wrapper">
+                        <p> sudah terjual: <b>15</b> </p>
+                        <p> tersedia: <b>40</b> </p>
+                      </div>
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+                      <p class="countdown-desc">Cepatlah! Penawaran berakhir:</p>
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Hari</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Jam</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Menit</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Detik</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- KISI-KISI PRODUK -->
+          <div class="product-main">
+            <h2 class="title">Produk Baru</h2>
+            <div class="product-grid">
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300"
+                    class="product-img hover">
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">jaket</a>
+                  <a href="#">
+                    <h3 class="showcase-title">Jaket Kulit Pria Musim Dingin</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 999.000,-</p>
+                    <del>Rp. 1.299.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">penjualan</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">kemeja</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Kemeja Katun Garmen Murni</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 699.000,-</p>
+                    <del>Rp. 899.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Jaket</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Jaket Ritsleting Pria</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 899.000,-</p>
+                    <del>Rp. 1.099.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle pink">Baru</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Rok</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Rok Midi Corak Floral Hitam</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp 399.000,-</p>
+                    <del>Rp. 599.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shoe-2.jpg" alt="Casual Men's Brown shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/shoe-2_1.jpg" alt="Casual Men's Brown shoes"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Santai</a>
+                  <h3>
+                    <a href="#" class="showcase-title">Sepatu kasual pria berwarna cokelat</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 1.299.000,-</p>
+                    <del>Rp. 1.499.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-3.jpg" alt="Pocket Watch Leather Pouch"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-4.jpg" alt="Pocket Watch Leather Pouch"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">penjualan</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">arloji</a>
+                  <h3>
+                    <a href="#" class="showcase-title">Kantung Kulit Arloji Saku</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 1.299.000,-</p>
+                    <del>Rp. 1.499.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-1.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">arloji</a>
+                  <h3>
+                    <a href="#" class="showcase-title">Arloji pintar Vital Plus</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 1.499.000,-</p>
+                    <del>Rp. 1.999.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/party-wear-1.jpg" alt="Womens Party Wear Shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/party-wear-2.jpg" alt="Womens Party Wear Shoes"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">penjualan</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">pakaian pesta</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Sepatu Pakaian Pesta Wanita</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 299.000,-</p>
+                    <del>Rp. 499.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/jacket-1.jpg" alt="Mens Winter Leathers Jackets"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/jacket-2.jpg" alt="Mens Winter Leathers Jackets"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">jaket</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Jaket Kulit Pria Musim Dingin</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 499.000,-</p>
+                    <del>Rp. 699.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/sports-2.jpg" alt="Trekking & Running Shoes - black"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/sports-4.jpg" alt="Trekking & Running Shoes - black"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">penjualan</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">olahraga</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Sepatu Trekking & Lari - hitam</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 999.000,-</p>
+                    <del>Rp. 1.050.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">formal</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Sepatu Formal Kulit Pria</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 799.000,-</p>
+                    <del>Rp. 1.050.000,-</del>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/shorts-2.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">penjualan</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">celana pendek</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Celana Pendek Terry Dasar yang Lebih Baik</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">Rp. 999.000,-</p>
+                    <del>Rp. 1.299.000,-</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!--- TESTIMONIAL, CTA & LAYANAN -->
+    <div>
+      <div class="container">
+        <div class="testimonials-box">
+
+          <!--- KESAKSIAN -->
+          <div class="testimonial">
+
+            <h2 class="title">kesaksian</h2>
+            <div class="testimonial-card">
+              <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80"
+                height="80">
+              <p class="testimonial-name">Kurmia Samtuy</p>
+              <p class="testimonial-title">CEO & Pendiri Invision</p>
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+              <p class="testimonial-desc">
+                Sangat penting untuk memiliki layanan pelanggan yang baik
+                Sakit adalah rasa sakit.
+              </p>
+            </div>
+          </div>
+
+
+          <!--- CTA -->
+          <div class="cta-container">
+            <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+            <a href="#" class="cta-content">
+              <p class="discount">Diskon 25%</p>
+              <h2 class="cta-title">Koleksi musim panas</h2>
+              <p class="cta-text">Mulai dari Rp. 199.000,-</p>
+              <button class="cta-btn">Belanja sekarang</button>
+            </a>
+          </div>
+
+
+
+          <!--- SERVICE-->
+          <div class="service">
+            <h2 class="title">Layanan kami</h2>
+            <div class="service-container">
+              <a href="#" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+                  <h3 class="service-title">Pengiriman ke Seluruh isekai</h3>
+                  <p class="service-desc">Untuk Pesanan Lebih dari Rp. 999.000,-</p>
+                </div>
+              </a>
+
+              <a href="#" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+                  <h3 class="service-title">Pengiriman Hari Berikutnya</h3>
+                  <p class="service-desc">Hanya Pesanan dari Isekai</p>
+                </div>
+              </a>
+
+              <a href="#" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+                  <h3 class="service-title">Dukungan Online Terbaik</h3>
+                  <p class="service-desc">Jam: 08:00 - 23:59</p>
+                </div>
+              </a>
+
+              <a href="#" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+                  <h3 class="service-title">Kebijakan Pengembalian Barang</h3>
+                  <p class="service-desc">Pengembalian yang Mudah & Gratis</p>
+                </div>
+              </a>
+
+              <a href="#" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Uang kembali 30%</h3>
+                  <p class="service-desc">Untuk Pemesanan Lebih dari Rp. 999.000,-</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- BLOG -->
+    <div class="blog">
+      <div class="container">
+        <div class="blog-container has-scrollbar">
+          <div class="blog-card">
+            <a href="#">
+              <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives"
+                width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+              <a href="#" class="blog-category">Busana</a>
+              <a href="#">
+                <h3 class="blog-title">Panduan Ritel Pakaian 2024 untuk Eksekutif Pakaian.</h3>
+              </a>
+
+              <p class="blog-meta">
+                Oleh <cite>Tn. Admin</cite> / <time datetime="2022-04-06">05 Juni 2024</time>
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <a href="#">
+              <img src="./assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+              <a href="#" class="blog-category">Pakaian</a>
+              <h3>
+                <a href="#" class="blog-title">Tren mode di tepi jalan: Cara Memenangkan Pertarungan Pickup.</a>
+              </h3>
+
+              <p class="blog-meta">
+                Oleh <cite>Mr Miku</cite> / <time datetime="2022-01-18">05 Juni 2024</time>
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Sepatu</a>
+              <h3>
+                <a href="#" class="blog-title">Vendor EBT: Klaim Bagian Anda dari Pendapatan SNAP Online.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Kobo</cite> / <time datetime="2022-02-10">05 Juni 2024</time>
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <a href="#">
+              <img src="./assets/images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Peralatan elektronik</a>
+
+              <h3>
+                <a href="#" class="blog-title">Tren mode di tepi jalan: Cara Memenangkan Pertarungan Pickup.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Anya</cite> / <time datetime="2022-03-15"> 05 Juni 2024</time>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <!--- FOOTER -->
+  <footer>
+    <div class="footer-category">
+      <div class="container">
+        <h2 class="footer-category-title">Direktori merek</h2>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Busana :</h3>
+          <a href="#" class="footer-category-link">Kaos</a>
+          <a href="#" class="footer-category-link">Kemeja</a>
+          <a href="#" class="footer-category-link">celana pendek & jeans</a>
+          <a href="#" class="footer-category-link">jaket</a>
+          <a href="#" class="footer-category-link">gaun & pakaian</a>
+          <a href="#" class="footer-category-link">pakaian dalam </a>
+          <a href="#" class="footer-category-link">kaos kaki</a>
+        </div>
+
+        <!-- Sepatu -->
+        <div class="footer-category-box">
+          <h3 class="category-box-title">sepatu :</h3>
+          <a href="#" class="footer-category-link">olahraga</a>
+          <a href="#" class="footer-category-link">resmi</a>
+          <a href="#" class="footer-category-link">Sepatu bot</a>
+          <a href="#" class="footer-category-link">santai</a>
+          <a href="#" class="footer-category-link">sepatu koboi</a>
+          <a href="#" class="footer-category-link">sepatu keamanan</a>
+          <a href="#" class="footer-category-link">Sepatu untuk pesta</a>
+          <a href="#" class="footer-category-link">Branded (bermerek)</a>
+          <a href="#" class="footer-category-link">Salinan pertama</a>
+          <a href="#" class="footer-category-link">Sepatu panjang</a>
+        </div>
+
+        <!-- perhiasan -->
+        <div class="footer-category-box">
+          <h3 class="category-box-title">perhiasan :</h3>
+          <a href="#" class="footer-category-link">Kalung</a>
+          <a href="#" class="footer-category-link">Anting-anting</a>
+          <a href="#" class="footer-category-link">Pasangan cincin</a>
+          <a href="#" class="footer-category-link">Liontin</a>
+          <a href="#" class="footer-category-link">Crystal (Kristal)</a>
+          <a href="#" class="footer-category-link">Gelang</a>
+          <a href="#" class="footer-category-link">aksesoris gelang</a>
+          <a href="#" class="footer-category-link">nosepin</a>
+          <a href="#" class="footer-category-link">Rantai</a>
+          <a href="#" class="footer-category-link">Anting-anting</a>
+          <a href="#" class="footer-category-link">Pasangan cincin</a>
+        </div>
+
+        <!-- produk kosmetik -->
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Produk kosmetik :</h3>
+          <a href="#" class="footer-category-link">Sampo</a>
+          <a href="#" class="footer-category-link">Pencuci Tubuh (Bodywash)</a>
+          <a href="#" class="footer-category-link">Pencucian wajah</a>
+          <a href="#" class="footer-category-link">peralatan rias</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstik</a>
+          <a href="#" class="footer-category-link">parfum</a>
+          <a href="#" class="footer-category-link">Sabun mandi</a>
+          <a href="#" class="footer-category-link">lulur</a>
+          <a href="#" class="footer-category-link">gel rambut</a>
+          <a href="#" class="footer-category-link">warna rambut</a>
+          <a href="#" class="footer-category-link">pewarna rambut</a>
+          <a href="#" class="footer-category-link">pelindung matahari (sunscreen)</a>
+          <a href="#" class="footer-category-link">loson kulit</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstik</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kategori Populer -->
+    <div class="footer-nav">
+      <div class="container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Kategori Populer</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Busana</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Barang Elektronik</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Produk kosmetik</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Informasi Kesehatan</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Arloji</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Produk-produk</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Harga turun</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Produk baru</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Penjualan terbaik</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hubungi kami</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Peta Situs Web</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Perusahaan kami</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Pengiriman barang</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Pemberitahuan</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Syarat dan ketentuan</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Tentang kami</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Pembayaran aman</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Layanan</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Harga turun</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Produk baru </a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Penjualan terbaik</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hubungi kami</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Peta Lokasi</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Kontak</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 atau 414
+              Sleman, Yogyakarta(NY), 14812, Id
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(+62) 844-320-00</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="Miku:example@gmail.com" class="footer-nav-link">Miku@gmail.com</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Ikuti Kami</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+        <p class="copyright">
+          Hak Cipta &copy; <a href="#">Anon</a> hak cipta dilindungi undang-undang.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
